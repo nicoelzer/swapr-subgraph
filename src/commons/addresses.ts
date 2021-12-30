@@ -107,7 +107,7 @@ export function getUsdcNativeCurrencyWrapperPairAddress(): string {
   let network = dataSource.network() as string
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x98f29f527c8e0ecc67a3c2d5567833bee01f2a12'
-  if (network == 'rinkeby') return '0xf3a261b601cd965cd18a5618c436a899c9abed51'
+  if (network == 'rinkeby') return ADDRESS_ZERO
   if (network == 'xdai') return ADDRESS_ZERO
   if (network == 'arbitrum-one') return '0x403b1405d8caffc1cc5032cc82aa135d2481d0cf'
   if (network == 'arbitrum-rinkeby') return ADDRESS_ZERO
@@ -119,7 +119,7 @@ export function getDaiNativeCurrencyWrapperPairAddress(): string {
   let network = dataSource.network() as string
   // not using a switch-case because using strings is not yet supported (only u32)
   if (network == 'mainnet') return '0x7515be43d16f871588adc135d58a9c30a71eb34f'
-  if (network == 'rinkeby') return ADDRESS_ZERO
+  if (network == 'rinkeby') return '0xb07596c5a7e5995a04856b552ed4b12d06b0b93d'
   if (network == 'xdai') return ADDRESS_ZERO
   if (network == 'arbitrum-one') return ADDRESS_ZERO
   if (network == 'arbitrum-rinkeby') return '0x1bb34bc1967e0cbe1c9008e5390c6d426357549d'
